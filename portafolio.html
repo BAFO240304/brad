@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/destacados.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">[Tu Nombre]</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="servicesDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="web-design.html">Desarrollo Web</a></li>
+                            <li><a class="dropdown-item" href="seo.html">Diseño UI/UX</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="portfolio-title">Proyectos Destacados</h2>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Proyecto 1 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="img/descargar (5).jpeg" alt="E-commerce Dashboard" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">E-commerce Dashboard</h3>
+                                <p class="project-description">Dashboard administrativo completo para gestionar
+                                    productos, pedidos y usuarios de una tienda en línea. Incluye análisis en tiempo
+                                    real y reportes personalizados.</p>
+                                <div class="technologies">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Redux</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link demo-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Ver Demo
+                                    </a>
+                                    <a href="#" class="project-link github-link">
+                                        <i class="fab fa-github"></i>
+                                        Ver Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="img/imagen_para_computadora.jpeg" alt="Blog CMS" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Blog CMS</h3>
+                                <p class="project-description">Sistema de gestión de contenidos para blog con editor
+                                    WYSIWYG, gestión de usuarios y análisis de métricas. Incluye optimización SEO y
+                                    cache avanzado.</p>
+                                <div class="technologies">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">Laravel</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Redis</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link demo-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Ver Demo
+                                    </a>
+                                    <a href="#" class="project-link github-link">
+                                        <i class="fab fa-github"></i>
+                                        Ver Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="img/Pushen.jpeg" alt="Blog CMS" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Blog CMS</h3>
+                                <p class="project-description">Sistema de gestión de contenidos para blog con editor
+                                    WYSIWYG, gestión de usuarios y análisis de métricas. Incluye optimización SEO y
+                                    cache avanzado.</p>
+                                <div class="technologies">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">Laravel</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Redis</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link demo-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Ver Demo
+                                    </a>
+                                    <a href="#" class="project-link github-link">
+                                        <i class="fab fa-github"></i>
+                                        Ver Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content container">
+        <!-- About Section -->
+        <div class="footer-section">
+            <h3 class="footer-title">Nombre Apellido</h3>
+            <p class="footer-description">
+                Desarrollador Full Stack especializado en crear soluciones web innovadoras y escalables.
+                Apasionado por las nuevas tecnologías y el aprendizaje continuo.
+            </p>
+            <div class="social-links">
+                <a style="text-decoration: none;" href="https://www.facebook.com" class="social-link"
+                    aria-label="Facebook" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a style="text-decoration: none;" href="https://wa.me/953068897" class="social-link"
+                    aria-label="WhatsApp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+        </div>
+        <!-- Quick Links Section -->
+        <div class="footer-section">
+            <h3 class="footer-title">Enlaces Rápidos</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre Mí</a></li>
+                <!--
+                <li><a href="#servicios">Servicios</a></li>
+                -->
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Services Section -->
+        <div class="footer-section">
+            <h3 class="footer-title">Servicios</h3>
+            <ul class="footer-links">
+                <li><a href="#desarrollo-web">Desarrollo Web</a></li>
+                <li><a href="#consultoria">Consultoría</a></li>
+                <li><a href="#diseno-ui">Diseño UI/UX</a></li>
+                <!--
+                <li><a href="#apps-moviles">Apps Móviles</a></li>
+                <li><a href="#seo">SEO</a></li>
+                -->
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section">
+            <h3 class="footer-title">Contacto</h3>
+            <ul class="contact-info">
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Huancayo</span>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <span>953 068 897</span>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>bradolivares692@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="copyright">
+                © <span id="current-year"></span> Nombre Apellido. Todos los derechos reservados.
+            </p>
+            <div class="legal-links">
+                <a href="#privacy">Privacidad</a>
+                <a href="#terms">Términos</a>
+                <a href="#cookies">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        // Update current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            speed: 800,
+            spaceBetween: 2,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+        <script src="js/scroll.js"></script>
+</body>
+
+</html>

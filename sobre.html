@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de [Tu Nombre], programador freelance experto en sitios web con zona administrable.">
+    <title>Freelancer | [Tu Nombre]</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+    <style>
+        /* ... (estilos anteriores) ... */
+
+        /* Mejoras para la adaptabilidad de las imágenes */
+        @media (max-width: 768px) {
+            .project-card {
+                grid-template-columns: 1fr;
+            }
+
+            .project-image-container {
+                height: 300px;
+                /* Aumentado de 200px */
+                width: 100%;
+            }
+
+            .swiper-slide {
+                height: auto;
+                min-height: 650px;
+                /* Altura mínima para contenido */
+            }
+
+            .project-content {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Estilos para la nueva sección de cards */
+        .other-projects {
+            padding: 4rem 0;
+            background-color: #ffffff;
+        }
+
+        .other-projects-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--dark-color);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        .project-mini-card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-mini-card:hover {
+            transform: translateY(-10px);
+        }
+
+    </style>
+
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">[Tu Nombre]</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portafolio.html">Portafolio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="servicesDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="web-design.html">Desarrollo Web</a></li>
+                                <li><a class="dropdown-item" href="seo.html">Diseño UI/UX</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+
+        <!-- Nueva sección de Otros Proyectos -->
+        <section class="other-projects">
+            <div class="container">
+                <h2 class="other-projects-title">Otros Proyectos</h2>
+                <div class="projects-grid">
+                    <!-- Card 1 -->
+                    <div class="project-mini-card">
+                        <img src="/api/placeholder/400/320" alt="Proyecto Mini 1" class="mini-card-image">
+                        <div class="mini-card-content">
+                            <h3 class="mini-card-title">App de Fitness</h3>
+                            <p class="mini-card-description">Aplicación móvil para seguimiento de rutinas de ejercicio y
+                                nutrición personalizada.</p>
+                            <div class="mini-card-tags">
+                                <span class="mini-tag">React Native</span>
+                                <span class="mini-tag">Express</span>
+                                <span class="mini-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link demo-link">Ver Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="project-mini-card">
+                        <img src="/api/placeholder/400/320" alt="Proyecto Mini 2" class="mini-card-image">
+                        <div class="mini-card-content">
+                            <h3 class="mini-card-title">Portal de Cursos</h3>
+                            <p class="mini-card-description">Plataforma de aprendizaje en línea con sistema de
+                                suscripción y contenido multimedia.</p>
+                            <div class="mini-card-tags">
+                                <span class="mini-tag">Next.js</span>
+                                <span class="mini-tag">Strapi</span>
+                                <span class="mini-tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link demo-link">Ver Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="project-mini-card">
+                        <img src="/api/placeholder/400/320" alt="Proyecto Mini 3" class="mini-card-image">
+                        <div class="mini-card-content">
+                            <h3 class="mini-card-title">Chat en Tiempo Real</h3>
+                            <p class="mini-card-description">Aplicación de mensajería instantánea con soporte para
+                                grupos y archivos.</p>
+                            <div class="mini-card-tags">
+                                <span class="mini-tag">Vue.js</span>
+                                <span class="mini-tag">Firebase</span>
+                                <span class="mini-tag">WebRTC</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link demo-link">Ver Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    </body>
+
+    </html>
